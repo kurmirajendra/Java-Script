@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h4>Select Colour</h4>
+    <select id="bg" onchange="f1()">
+        <option value="0">Red</option>
+        <option value="1">Blue</option>
+        <option value="2">Green</option>
+    </select>
+    
+
+    <script>
+        const arr1 = new Array("red", "blue", "green");
+        function f1(){
+            let i = document.getElementById('bg').value;
+            document.bgColor= arr1[i];
+            console.log(document.getElementById('bg').value);
+        }
+        
+    </script>
+    
+</body>
+</html>
