@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    
+    <h1 onclick="f1()">Click here</h1>
+     <div style="display:block;" onmousewheel="f1()">Scroll here</div>
+      <script> 
+      const arr = new Array("red","blue","green","orangered","skyblue");
+      
+      
+      console.log(arr); let i = 0; 
+      function f1(){
+        if(i>=arr.length) i=0; 
+        console.log(i," : ",arr[i]);
+
+         document.bgColor = arr[i++];
+
+          } 
+         </script> 
+</body>
+</html>
